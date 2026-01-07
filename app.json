@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "AI Voice Chat",
+    "slug": "ai-voice-chat",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTabletMode": true,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "This app needs access to your microphone to record voice messages",
+        "NSAudioDefaultToSpeaker": true
+      },
+      "bundleIdentifier": "com.example.aivoicechat"
+    },
+    "android": {
+      "package": "com.example.aivoicechat",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.INTERNET",
+        "android.permission.READ_PHONE_STATE",
+        "android.permission.ACCESS_NETWORK_STATE"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0a0e27"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": false
+        }
+      ]
+    ],
+    "experiments": {
+      "tsconfigPaths": true
+    },
+    "scheme": "ai-voice-chat",
+    "platforms": ["ios", "android", "web"],
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "owner": "mannycab2009-hue"
+  }
+}
